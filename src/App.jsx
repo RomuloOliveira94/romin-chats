@@ -6,9 +6,6 @@ import { Info } from './consts'
 
 const socket = io("https://romin-chats-backend.onrender.com/", {
   withCredentials: true,
-  extraHeaders: {
-    "romin-chats": "teste"
-  }
 });
 
 function App() {
