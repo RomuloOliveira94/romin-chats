@@ -4,9 +4,7 @@ import Chat from './Chat';
 import { Container, Card, Form, Button, Header} from 'semantic-ui-react';
 import { Info } from './consts'
 
-const socket = io("https://romin-chats-backend.onrender.com/", {
-  withCredentials: true,
-});
+const socket = io("https://romin-chats-backend.onrender.com/");
 
 function App() {
   const [username, setUsername] = useState("");
