@@ -3,8 +3,7 @@ import io from 'socket.io-client';
 import Chat from './Chat';
 import { Container, Card, Form, Button, Header} from 'semantic-ui-react';
 import { Info } from './consts'
-
-const socket = io("https://romin-chats-backend.onrender.com/");
+const socket = io("http://localhost:5000");
 
 function App() {
   const [username, setUsername] = useState("");
@@ -14,7 +13,7 @@ function App() {
   const joinRoom = async () => {
     if (room != "" && username != "") {
       const info = new Info(`${username} entrou na sala`, room, true)
-      await socket.emit("join_room", info)
+      socket.emit("join_room", info)
       setShowChat(true);
     }
   }
