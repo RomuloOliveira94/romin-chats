@@ -16,13 +16,16 @@ Chat application with rooms, user counter, in real time with websockets.
   <li>Connect to another room.</li>
 </ul>
 
+# Techs
+
+<ul>
+  <li>React.js</li>
+  <li>Node</li>
+  <li>Express</li>
+  <li>Socket.io</li>
+</ul>
+
 # Back-end Repo
 
 [Link](https://github.com/RomuloOliveira94/romin-chats-backend) 
 
-# Romin's Chat
-
-React.js
-Node
-Express
-Socket.io
